@@ -1,0 +1,41 @@
+# 只提交代码、计划/文档和报告；数据、权重、实验输出、第三方代码与工具不提交（体积与许可原因，见 README）
+/checkpoint/
+/data/
+/runs/
+/results/
+/share/
+/third_party/
+/essays/
+/figures/
+/tools/libreoffice/root/
+/tools/libreoffice/dl/
+/tools/libreoffice/fonts/
+/report/template/
+
+# 权重与缓存
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Word 打开文档时的锁文件
+~$*
+.~lock.*
+
+# 未发布的问题草稿
+/docs/github_issue_draft.md
+
+# 私钥与凭据（绝不提交）
+*.id
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*.pem
+*.key
+*.p12
+.env
+.ssh/
