@@ -51,3 +51,6 @@ id_ecdsa*
 *.p12
 .env
 .ssh/
+
+# PPT 生成用的 Python 环境
+/tools/pptx-venv/

@@ -103,3 +103,4 @@
   report/old/ 已不存在（11-26 被移到回收站 ~/.local/share/Trash/files/old.2），本次备份改放 runs/report_backups/。
 - 2026-11-27 13:53 第十六轮：update_v16.py 更正式(2-14) 滑动平均系数（γ_t = 0.5 + 0.4t/250，0.50～0.55，原写 0.9 与代码不符）和式(2-15) 引导步长说明
   （初值 0.1，随时间步调整，损失增大时乘以 0.8）。verify 13/13，26 页。旧版 runs/report_backups/…_v15.docx。
+- 2026-11-27 14:51 中期汇报 PPT（用户要求）：docs/midterm_ppt/make_ppt.py（python-pptx，tools/pptx-venv），20 页，内容只取自中期报告第十六轮，每页附讲稿；输出 report/…_中期汇报.pptx 与预览 PDF。
