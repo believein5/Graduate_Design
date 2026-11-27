@@ -185,7 +185,7 @@ def cover():
     x.append(para(run("哈尔滨工业大学深圳校区", title_rpr),
                   ppr_extra=title_ppr.replace('w:before="0"', 'w:before="1100"')))
     x.append(para(run("毕业论文（设计）中期报告", title_rpr), ppr_extra=title_ppr))
-    x.append(para("", ppr_extra='<w:spacing w:before="1600" w:after="0" w:line="240" w:lineRule="auto"/>'))
+    # 2026-11-27：用户在 Word 中删去了标题与信息表之间的 80 磅空段（Word 中封面因此不再溢出到第二页），此处同步删去
 
     W_LABEL, W_COLON, W_VALUE = 1500, 420, 5400
     cell_ppr = '<w:spacing w:before="240" w:after="0" w:line="360" w:lineRule="auto"/>'
@@ -423,7 +423,8 @@ def inline_math(tex):
 FIG_WIDTH_PT = {"fig_pre_overview": 400, "fig_pre_patches": 150, "fig_pre_rescale": 230, "fig_pre_clean": 230,
                 "fig_pre_coverage": 400, "fig_pre_free": 425, "fig_64_samples": 360,
                 "fig_64_process": 360, "fig_256_samples": 400, "fig_crg_input": 170, "fig_crg_pairs": 330,
-                "fig_methods": 300, "fig_kid": 420, "fig_crg": 300, "route_mid": 425, "op_ddpm": 420}
+                "fig_methods": 300, "fig_kid": 420, "fig_crg": 300, "route_mid": 425, "op_ddpm": 420,
+                "fig_principle": 430, "fig_mask_steps": 420}
 THREE_LINE = (f'<w:tblBorders>{border("top", 12)}<w:left w:val="nil"/>{border("bottom", 12)}'
               '<w:right w:val="nil"/><w:insideH w:val="nil"/><w:insideV w:val="nil"/></w:tblBorders>')
 # 公式：居中制表位放公式，右对齐制表位放编号（指南 §2.10：公式居中、编号右对齐）

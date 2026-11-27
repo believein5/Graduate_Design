@@ -157,15 +157,16 @@ def b(side, sz):
     return f'<w:{side} w:val="single" w:color="auto" w:sz="{sz}" w:space="0"/>' if sz else f'<w:{side} w:val="nil"/>'
 
 
-def three_line(widths, rows):
-    """三线表：顶线、底线 1.5 磅，栏目线 1 磅（模板说明），单元格样式“表正文”"""
+def three_line(widths, rows, left=False):
+    """三线表：顶线、底线 1.5 磅，栏目线 1 磅（模板说明），单元格样式“表正文”；left=True 时表体左对齐（算法表）"""
     out = []
     for i, row in enumerate(rows):
         top = 12 if i == 0 else 0
         bottom = 8 if i == 0 else (12 if i == len(rows) - 1 else 0)
         brd = f'<w:tcBorders>{b("top", top)}{b("left", 0)}{b("bottom", bottom)}{b("right", 0)}</w:tcBorders>'
         keep = "<w:keepNext/>" if i < len(rows) - 1 else ""          # 整张表不跨页（指南 §2.12）
-        cells = "".join(cell(wd, "".join(para(runs(line), "22", keep) for line in str(v).split("\n")), brd) for wd, v in zip(widths, row))
+        jc = '<w:jc w:val="left"/>' if left and i > 0 else ""
+        cells = "".join(cell(wd, "".join(para(runs(line), "22", keep + jc) for line in str(v).split("\n")), brd) for wd, v in zip(widths, row))
         hdr = "<w:tblHeader/>" if i == 0 else ""
         out.append(f'<w:tr><w:trPr><w:cantSplit/>{hdr}<w:jc w:val="center"/></w:trPr>{cells}</w:tr>')
     grid = "".join(f'<w:gridCol w:w="{x}"/>' for x in widths)
@@ -226,9 +227,9 @@ def body_xml():
                 x.append(para(runs(sub), "36", '<w:keepNext/>'))
             x.append(para(runs(cap), "37"))
         elif t == "tab":
-            _, key, cap, widths, rows, nt = it
+            _, key, cap, widths, rows, nt, *opt = it
             x.append(para(runs(cap), "21", "<w:keepNext/>"))
-            x.append(three_line(widths, rows))
+            x.append(three_line(widths, rows, left=bool(opt and opt[0] == "left")))
             if nt:
                 x.append(para(runs(nt), "22", '<w:jc w:val="left"/>'))
             x.append(para("", "3"))
