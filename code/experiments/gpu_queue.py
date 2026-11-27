@@ -4,6 +4,7 @@ python gpu_queue.py   任务列表见 JOBS（命令, 需要的显存 MiB, 日志
 """
 import os
 import subprocess
+import sys
 import time
 from pathlib import Path
 
@@ -11,12 +12,12 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 RES = ROOT / "results" / "experiments"
 SYN = ROOT / "data" / "synthetic"
-PY = "/home/CNS2026014739/miniconda3/envs/crg-defect/bin/python"
+PY = os.environ.get("CRG_PY", sys.executable)          # 主环境的 Python（env/requirements-main.txt），默认为运行本脚本的 Python
 MARGIN = 2000                                   # 启动后至少留给其他进程的显存（ControlNet 生成在空闲 < 1500 MiB 时会自停）
 
 # 划分 A 全部检测器按 640 输入重跑（select 选 best.pt）；种子优先：先得到每个方法的第一个种子
 METHODS = ["crg", "dpmpaste", "repaint", "copaint", "controlnet", "copypaste", "ecics", "crgwin"]
-BPY = "/home/CNS2026014739/miniconda3/envs/baselines/bin/python"
+BPY = os.environ.get("BASELINES_PY", "python")         # 对比方法环境的 Python（env/requirements-baselines.txt）
 DEFFILLER = (f"{BPY} baselines/deffiller_baseline.py gen > ../../runs/baselines/deffiller/gen.log 2>&1 && "
              + " && ".join(f"{PY} detect.py --config deffiller_1x --seed {s} --split A --proto img640" for s in (0, 1, 2)))
 CRGOURS = [([PY, "detect.py", "--config", "crgours_1x", "--seed", str(s), "--split", "A", "--proto", "img640"], 6000,

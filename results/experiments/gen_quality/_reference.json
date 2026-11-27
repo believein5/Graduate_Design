@@ -1,0 +1,13 @@
+{
+ "name": "select (real)",
+ "n": 300,
+ "lpips_div": 0.4764978736639023,
+ "lpips_div_per_class": {
+  "missinghole": 0.4898890256881714,
+  "mousebite": 0.4709744453430176,
+  "opencircuit": 0.4787585735321045,
+  "short": 0.4840506613254547,
+  "spur": 0.46361044049263,
+  "spuriouscopper": 0.4717040956020355
+ }
+}

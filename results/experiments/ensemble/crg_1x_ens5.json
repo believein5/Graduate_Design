@@ -1,0 +1,39 @@
+{
+ "name": "crg_1x_ens5",
+ "runs": [
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_A_vbase/crg_1x/seed0",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_A_vbase/crg_1x/seed1",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_A_vbase/crg_1x/seed2",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_A_vbase/crg_1x/seed3",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_A_vbase/crg_1x/seed4"
+ ],
+ "tta": false,
+ "select": {
+  "map50_95": 0.5421181469776829,
+  "map50": 0.9812418087226881,
+  "precision": 0.9515954178513969,
+  "recall": 0.9770408985531464,
+  "per_class": {
+   "missinghole": 0.6130683210655795,
+   "mousebite": 0.5443455078418313,
+   "opencircuit": 0.5264748747947308,
+   "short": 0.47959149807043133,
+   "spur": 0.5189938170603423,
+   "spuriouscopper": 0.5702348630331822
+  }
+ },
+ "test": {
+  "map50_95": 0.5262726214166107,
+  "map50": 0.9835823817867474,
+  "precision": 0.959463863487223,
+  "recall": 0.9683316034651508,
+  "per_class": {
+   "missinghole": 0.5390562250283782,
+   "mousebite": 0.5427323097294854,
+   "opencircuit": 0.5492178144293759,
+   "short": 0.4961148669205597,
+   "spur": 0.5339248140528362,
+   "spuriouscopper": 0.49658969833902855
+  }
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "name": "rot90_mix6",
+ "runs": [
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_Aclean_vrot90/original/seed0",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_Aclean_vrot90/original/seed1",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_Aclean_vrot90/original/seed2",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_Aclean_vrot90/crg_1x/seed0",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_Aclean_vrot90/crg_1x/seed1",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_Aclean_vrot90/crg_1x/seed2"
+ ],
+ "tta": false,
+ "select": {
+  "map50_95": 0.5673196851803951,
+  "map50": 0.9887765843692988,
+  "precision": 0.9826571289553611,
+  "recall": 0.9858132828066237,
+  "per_class": {
+   "missinghole": 0.6405356283059037,
+   "mousebite": 0.5708957766698137,
+   "opencircuit": 0.5310467519207518,
+   "short": 0.5306904480426768,
+   "spur": 0.5440480700164946,
+   "spuriouscopper": 0.5867014361267302
+  }
+ },
+ "test": {
+  "map50_95": 0.5417347526131279,
+  "map50": 0.9823558811109955,
+  "precision": 0.9604857264595368,
+  "recall": 0.9652570327281236,
+  "per_class": {
+   "missinghole": 0.5567793852061503,
+   "mousebite": 0.572397651377111,
+   "opencircuit": 0.5619270719610976,
+   "short": 0.5001131321782308,
+   "spur": 0.5200439382012365,
+   "spuriouscopper": 0.5391473367549396
+  }
+ }
+}

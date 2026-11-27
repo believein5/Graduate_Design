@@ -2,7 +2,19 @@
 /checkpoint/
 /data/
 /runs/
-/results/
+# results/ 只提交支撑论文数字的小文件（指标、训练曲线、集成与生成质量结果），不提交图像和权重
+/results/**
+!/results/**/
+!/results/**/metrics.json
+!/results/**/train/results.csv
+!/results/experiments/ensemble/*.json
+!/results/experiments/gen_quality/*.json
+!/results/experiments/scan/*.csv
+!/results/experiments/scan/*.json
+!/results/experiments/bootstrap_test.json
+!/results/comparison/*.csv
+!/results/comparison/*.json
+!/results/comparison_50k/*.json
 /share/
 /third_party/
 /essays/

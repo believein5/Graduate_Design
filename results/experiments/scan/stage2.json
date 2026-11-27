@@ -1,0 +1,133 @@
+{
+ "top": [
+  "g4",
+  "thr08",
+  "temp0.5_thr0.8"
+ ],
+ "exit_codes": [
+  0,
+  0,
+  0
+ ],
+ "n300": {
+  "g4": {
+   "name": "g4",
+   "dir": "crgscan_g4_A",
+   "n": 300,
+   "det_rate": 0.49666666666666665,
+   "mean_iou": 0.3916008706783013,
+   "bg_change": 2.278211386203766,
+   "win_change": 2.935696070988973,
+   "det_rate_per_class": {
+    "missinghole": 0.8,
+    "mousebite": 0.62,
+    "opencircuit": 0.3,
+    "short": 0.4,
+    "spur": 0.54,
+    "spuriouscopper": 0.32
+   }
+  },
+  "thr08": {
+   "name": "thr08",
+   "dir": "crgscan_thr08_A",
+   "n": 300,
+   "det_rate": 0.4533333333333333,
+   "mean_iou": 0.35614977271770526,
+   "bg_change": 2.473603089650472,
+   "win_change": 2.907752536137899,
+   "det_rate_per_class": {
+    "missinghole": 0.92,
+    "mousebite": 0.54,
+    "opencircuit": 0.2,
+    "short": 0.38,
+    "spur": 0.44,
+    "spuriouscopper": 0.24
+   }
+  },
+  "temp0.5_thr0.8": {
+   "name": "temp0.5_thr0.8",
+   "dir": "crgscan_temp0.5_thr0.8_A",
+   "n": 300,
+   "det_rate": 0.47333333333333333,
+   "mean_iou": 0.3768795717268259,
+   "bg_change": 2.4740163977940877,
+   "win_change": 2.8798122775554655,
+   "det_rate_per_class": {
+    "missinghole": 0.94,
+    "mousebite": 0.62,
+    "opencircuit": 0.28,
+    "short": 0.36,
+    "spur": 0.46,
+    "spuriouscopper": 0.18
+   }
+  },
+  "ref_crg": {
+   "name": "ref_crg",
+   "dir": "crg_A",
+   "n": 300,
+   "det_rate": 0.47,
+   "mean_iou": 0.37425615664710304,
+   "bg_change": 2.4747669859727224,
+   "win_change": 3.24982231815656,
+   "det_rate_per_class": {
+    "missinghole": 0.84,
+    "mousebite": 0.52,
+    "opencircuit": 0.3,
+    "short": 0.42,
+    "spur": 0.46,
+    "spuriouscopper": 0.28
+   }
+  },
+  "ref_crgpaper": {
+   "name": "ref_crgpaper",
+   "dir": "crgpaper_A",
+   "n": 300,
+   "det_rate": 0.21,
+   "mean_iou": 0.17287565509008304,
+   "bg_change": 2.0967254459857942,
+   "win_change": 4.568421780268351,
+   "det_rate_per_class": {
+    "missinghole": 0.6,
+    "mousebite": 0.18,
+    "opencircuit": 0.12,
+    "short": 0.28,
+    "spur": 0.04,
+    "spuriouscopper": 0.04
+   }
+  },
+  "ref_ecics": {
+   "name": "ref_ecics",
+   "dir": "ecics_A",
+   "n": 300,
+   "det_rate": 0.35,
+   "mean_iou": 0.27193535556176934,
+   "bg_change": 3.0110094292958576,
+   "win_change": 6.060407994985581,
+   "det_rate_per_class": {
+    "missinghole": 0.68,
+    "mousebite": 0.42,
+    "opencircuit": 0.1,
+    "short": 0.36,
+    "spur": 0.4,
+    "spuriouscopper": 0.14
+   }
+  },
+  "ref_dpmpaste": {
+   "name": "ref_dpmpaste",
+   "dir": "dpmpaste_A",
+   "n": 300,
+   "det_rate": 0.26666666666666666,
+   "mean_iou": 0.2432337738281212,
+   "bg_change": 0.0,
+   "win_change": 24.602870040734608,
+   "det_rate_per_class": {
+    "missinghole": 0.74,
+    "mousebite": 0.06,
+    "opencircuit": 0.2,
+    "short": 0.3,
+    "spur": 0.1,
+    "spuriouscopper": 0.2
+   }
+  }
+ }
+}

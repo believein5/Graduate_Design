@@ -1,0 +1,37 @@
+{
+ "name": "flipud_crg_1x_ens3",
+ "runs": [
+  "../../results/experiments/detection_A_vflipud/crg_1x/seed0",
+  "../../results/experiments/detection_A_vflipud/crg_1x/seed1",
+  "../../results/experiments/detection_A_vflipud/crg_1x/seed2"
+ ],
+ "tta": false,
+ "select": {
+  "map50_95": 0.5381803359004628,
+  "map50": 0.9844695445994884,
+  "precision": 0.9672812238856278,
+  "recall": 0.9773260203733574,
+  "per_class": {
+   "missinghole": 0.6255294778749347,
+   "mousebite": 0.5372176195657142,
+   "opencircuit": 0.4994772943027175,
+   "short": 0.4727414479410439,
+   "spur": 0.5564974917539864,
+   "spuriouscopper": 0.5376186839643793
+  }
+ },
+ "test": {
+  "map50_95": 0.5271118925362566,
+  "map50": 0.9722142539575297,
+  "precision": 0.9585764323814486,
+  "recall": 0.9586993491663458,
+  "per_class": {
+   "missinghole": 0.54032590664295,
+   "mousebite": 0.5541328135603505,
+   "opencircuit": 0.5438417579100088,
+   "short": 0.510636701633852,
+   "spur": 0.5176331818832277,
+   "spuriouscopper": 0.49610099358714993
+  }
+ }
+}

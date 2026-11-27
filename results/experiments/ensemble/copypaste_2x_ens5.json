@@ -1,0 +1,39 @@
+{
+ "name": "copypaste_2x_ens5",
+ "runs": [
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_A_vbase/copypaste_2x/seed0",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_A_vbase/copypaste_2x/seed1",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_A_vbase/copypaste_2x/seed2",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_A_vbase/copypaste_2x/seed3",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_A_vbase/copypaste_2x/seed4"
+ ],
+ "tta": false,
+ "select": {
+  "map50_95": 0.5512128091450913,
+  "map50": 0.9844087650731376,
+  "precision": 0.9733815985730317,
+  "recall": 0.9699552228056755,
+  "per_class": {
+   "missinghole": 0.631687973536895,
+   "mousebite": 0.5509719187019549,
+   "opencircuit": 0.5284003404285578,
+   "short": 0.47831734442227447,
+   "spur": 0.5424731014687103,
+   "spuriouscopper": 0.575426176312156
+  }
+ },
+ "test": {
+  "map50_95": 0.5334270377858631,
+  "map50": 0.9674722795407091,
+  "precision": 0.9515361497478815,
+  "recall": 0.9623038121750449,
+  "per_class": {
+   "missinghole": 0.5782196101546201,
+   "mousebite": 0.5448840959761521,
+   "opencircuit": 0.5481320735389268,
+   "short": 0.4847981977036328,
+   "spur": 0.5277448320239795,
+   "spuriouscopper": 0.516783417317867
+  }
+ }
+}

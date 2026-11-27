@@ -6,13 +6,15 @@
 """
 import csv
 import json
+import os
 import subprocess
+import sys
 import time
 
 import scan_configs
 from common import RES
 
-PY = "/home/CNS2026014739/miniconda3/envs/crg-defect/bin/python"
+PY = os.environ.get("CRG_PY", sys.executable)
 P = RES / "scan" / "proxy"
 LOG = RES.parents[1] / "runs" / "logs" / "claude_checks.log"
 REFS = {"ref_crg": "crg_A", "ref_crgpaper": "crgpaper_A", "ref_ecics": "ecics_A", "ref_dpmpaste": "dpmpaste_A"}

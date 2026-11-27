@@ -1,0 +1,35 @@
+{
+ "name": "crg_1x_tta_s0",
+ "runs": [
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_A_vbase/crg_1x/seed0"
+ ],
+ "tta": true,
+ "select": {
+  "map50_95": 0.5101806494395839,
+  "map50": 0.9768230647770165,
+  "precision": 0.9538952330790688,
+  "recall": 0.9636360340461708,
+  "per_class": {
+   "missinghole": 0.6019450393126771,
+   "mousebite": 0.5144524825830358,
+   "opencircuit": 0.48320491633970636,
+   "short": 0.42744544961851777,
+   "spur": 0.47000668116871047,
+   "spuriouscopper": 0.5640293276148565
+  }
+ },
+ "test": {
+  "map50_95": 0.4985588743301784,
+  "map50": 0.96600471659252,
+  "precision": 0.938529629915316,
+  "recall": 0.9512986276052909,
+  "per_class": {
+   "missinghole": 0.5197256770467897,
+   "mousebite": 0.4964206749350524,
+   "opencircuit": 0.5142440537938198,
+   "short": 0.49577422484903166,
+   "spur": 0.47507919134781035,
+   "spuriouscopper": 0.49010942400856655
+  }
+ }
+}

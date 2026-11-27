@@ -1,0 +1,37 @@
+{
+ "name": "clean_original_ens3",
+ "runs": [
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_Aclean_vbase/original/seed0",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_Aclean_vbase/original/seed1",
+  "/home/CNS2026014739/Projects/Diffusion_model/Graduate_Design/results/experiments/detection_Aclean_vbase/original/seed2"
+ ],
+ "tta": false,
+ "select": {
+  "map50_95": 0.5451452935248514,
+  "map50": 0.9795240461719935,
+  "precision": 0.9738681597218565,
+  "recall": 0.9700319207504146,
+  "per_class": {
+   "missinghole": 0.6274180776393503,
+   "mousebite": 0.5491400576408868,
+   "opencircuit": 0.5291321999158791,
+   "short": 0.47521282626479844,
+   "spur": 0.49579028427956046,
+   "spuriouscopper": 0.5941783154086331
+  }
+ },
+ "test": {
+  "map50_95": 0.5240946620106126,
+  "map50": 0.9733764949086732,
+  "precision": 0.9540678988412471,
+  "recall": 0.9579474738160774,
+  "per_class": {
+   "missinghole": 0.5576882876279088,
+   "mousebite": 0.533551317191915,
+   "opencircuit": 0.5573136590333918,
+   "short": 0.5098129686829456,
+   "spur": 0.503658886209492,
+   "spuriouscopper": 0.4825428533180223
+  }
+ }
+}
